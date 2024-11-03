@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+    <script src="fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/js/all.min.js"></script>
+    
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+     display: flex; 
+     align-items:center;
+     justify-content: center;
+     font-family:sans-serif;
+     height: 100vh;
+     background-color: #7c3af8;
+}
+#button1{
+  position: relative;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  background-color: #ffff;
+  display: inline-block;
+  text-decoration: none;
+  color:#5c4800;
+  cursor:pointer;
+  border-radius:4px;
+  transition: 0.5s;
+}
+.button:hover{
+    letter-spacing: 0.1rem;
+}
+#new{
+ position: fixed;
+ top: -100%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ background-color: #ffff;
+ width: 450px;
+ padding: 80px 50px 50px;
+ transition: 0.5s;
+ border-radius: 4px;
+visibility: hidden;
+
+}
+#new.show-box{
+    visibility: visible;
+    top: 50%;
+}
+#new h2{
+    text-align: center;
+    color:#5c4800;
+    font-size: 24px;
+    margin: 20px 10px;
+}
+#new p{
+    text-align: center;
+    color: #5c4800;
+
+}
+#new .box{
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+input,button{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 15px ;
+    outline: none;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+button{
+    border: none;
+    width: 150px;
+    letter-spacing: 0.1rem;
+    background-color:#7c3af9;
+    color: #ffff;
+    border-radius: 4px;
+    cursor:pointer;
+}
+ .close{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+ }
+</style>
+<body>
+     <button id="button1">Subscribe</button>
+     <div  id="new">
+         <h2>Joun Our Exlusive News Letter</h2>
+         <p>Follow My other courses As well from my Instructor Profiles</p>
+         <div class="box">
+            <input type="email" placeholder="Enter Email">
+         </div>
+         <div class="box">
+            <button  type="submit" >Sign Up</button>
+         </div>
+
+
+         <div class="close">
+            <i class="fas fa-times fa-2x"></i>
+         </div>
+     </div>
+  
+    <script src="popup.js"></script>   
+</body>
+</html>

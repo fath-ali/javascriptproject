@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/js/all.min.js">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: sans-serif;
+        background: linear-gradient(31deg,#0222d4 0%,#99b1fc 74%);
+    }
+    h1{
+        font-size: 3rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        color: orangered;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .container{
+        max-width: 600px;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    .container .accordion{
+        position: relative;
+        margin: 10px 0;
+        overflow: hidden;
+        transition: height 0.5s, padding 0.3s;
+
+    }
+    .container .accordion .heading{
+        padding: 15px;
+        background:linear-gradient(315deg,#ff9900 0%,red 75%);
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        border-radius: 5px 5px 0px;
+        cursor: pointer;
+        transition: background 0.3s,color 0.3s;
+        position: relative;
+        color: #fff;
+
+    }
+    .container .accordion .heading::before{
+        content: '+';
+        position: absolute;
+        right: 10px;
+        top: 50%; 
+        transform: translateY(-50%);
+        font-size: 2rem;
+        font-weight: 800;
+        transition: transform 0.3s;
+    }
+    .container .accordion.active .heading::before{
+     content: '-';
+     font-size: 2rem;
+     transform: translateY(-50%) rotate(180deg);
+    
+    }
+    .container .accordion .text{
+        height: 0;
+        overflow: hidden;
+        font-size: 1rem;
+        transition: height 0.5s,padding 0.3s;
+        background:#ddeedd;
+        border-radius: 0px 0px 5px 5px;
+ }
+ .container .accordion.active .text{
+    height:auto;
+    padding: 10px;
+ }
+ .container .accordion.active .heading{
+    background: linear-gradient(315deg,red 0%,blue 74%);
+ }
+</style>
+<body>
+     <div class="container">
+        <h1>Acccordion Project</h1>
+        <div class="accordion">
+            <div class="heading">What is Kotlin</div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Culpa, saepe. Nisi nobis ullam illum tempore
+                 accusamus quia numquam corporis officia!</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="heading">php is good or not</div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Culpa, saepe. Nisi nobis ullam illum tempore
+                 accusamus quia numquam corporis officia!</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="heading">python is easey</div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Culpa, saepe. Nisi nobis ullam illum tempore
+                 accusamus quia numquam corporis officia!</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="heading">what is java</div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Culpa, saepe. Nisi nobis ullam illum tempore
+                 accusamus quia numquam corporis officia!</p>
+            </div>
+        </div>
+     </div>
+    <script src="accordion.js"></script> 
+</body>
+</html>

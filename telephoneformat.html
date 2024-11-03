@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telephone Formatting Project</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background:linear-gradient(to bottom,#3494e6,#ec6ead);
+        text-align: center;
+        font-family: sans-serif;
+
+    }
+    .container{
+        background: #ffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    input{
+       font-size: 1.5rem;
+       padding: 10px;
+       border: none;
+       width: 100%;
+       border: 2px solid #3494e6;
+       border-radius: 10px;
+       margin-bottom: 10px;
+       outline: none;
+    }
+    h1{
+     margin-bottom: 20px;
+     font-size: 2rem;
+     text-transform: capitalize;
+     color: #333;
+    }
+    p{
+    font-size: 1.2rem;
+    color: #333;
+    }
+</style>
+<body>
+      <div class="container">
+        <h1>Telphone Formater</h1>
+        <input type="text" id="phone-input" placeholder="Phone Number" maxlength="16" >
+        <p>+(123) - 07288989</p>
+      </div>
+    <script src="telephone.js"></script>
+</body>
+</html>

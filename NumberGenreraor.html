@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+    }
+    body{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .container{
+        width: 30%;
+        height: auto;
+        padding: 30px;
+        background-color: white;
+        color: black;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .container h1{
+        font-size: 1.7rem;
+
+    }
+    #generator{
+        height: 30px;
+        margin-top: 30px;
+        background-color: brown;
+        color: white;
+        outline: none;
+        border: none;
+        transition: background-color ease-in-out 400ms;
+    }
+    #generator:hover{
+        background-color: red;
+    }
+    p{
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+</style>
+<body>
+     <div class="container">
+        <h1>Random Number Gernerator</h1>
+        <button id="generator">Generator Random Number</button>
+        <p id="result">0</p>
+     </div>
+    <script src="numbergenerator.js"></script>
+</body>
+</html>
